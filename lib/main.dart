@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:localization_app/homescreen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'View/langugescreen/langugechangescreen.dart';
 import 'controller/languge_change_provider.dart';
 
 void main() async {
@@ -55,9 +55,10 @@ class MyApp extends StatelessWidget {
                 Locale('en'), // English
                 Locale('ur'), // Urdu
               ],
-              home: const HomeScreen(),
+              home: const SelectLangugeScreen(),
             );
           },
-        ));
+        )
+        );
   }
 }
